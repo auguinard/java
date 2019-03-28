@@ -1,0 +1,40 @@
+<ion-header>
+    <ion-toolbar color="primary">
+        <ion-buttons slot="start">
+            <ion-menu-button></ion-menu-button>
+        </ion-buttons>
+        <ion-title>
+           <b>connexion</b>
+        </ion-title>
+    </ion-toolbar>
+</ion-header>
+<ion-content>
+    <ion-grid>
+        <ion-row>
+            <ion-col size-md="10">
+                <ion-card>
+                    <ion-list style="margin-top: 35px" padding>
+                                    <ion-item>
+                                        <ion-label position="floating">E-mail</ion-label>
+                                        <ion-input [(ngModel)]="mail" type="text" value=""></ion-input>
+                                    </ion-item>
+                                    <ion-item>
+                                        <ion-label position="floating">Mot de passe</ion-label>
+                                        <ion-input [(ngModel)]="password"  type="password" value=""></ion-input>
+                                    </ion-item><br>
+                                    <p style="text-align: center">mot de passe <a href="">oublier?</a></p>
+                                </ion-list>
+                                <div style="text-align: center" padding>
+                                    <ion-button primary block  (click)="login()">Se connecter</ion-button>
+                                </div>
+                </ion-card>
+            </ion-col>
+        </ion-row>
+    </ion-grid>
+</ion-content>
+<ion-footer style="background-color: whitesmoke" padding>
+    <div style="text-align: center">
+        <span style="color: grey">© 2019 BabyFood, tous droits reservé</span><br>
+        <b style="color: darkgray">By <a href="">Auguinard Kouame</a> & <a href="">Ecole NaN</a></b>
+    </div>
+</ion-footer>

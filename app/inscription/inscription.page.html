@@ -1,0 +1,68 @@
+<ion-header>
+    <ion-toolbar color="primary">
+        <ion-buttons slot="start">
+            <ion-menu-button></ion-menu-button>
+        </ion-buttons>
+        <ion-title>
+            <b>Inscription</b>
+        </ion-title>
+    </ion-toolbar>
+</ion-header>
+<ion-content padding>
+
+    <ion-grid>
+        <ion-row>
+            <ion-col size-md="10">
+                <ion-card>
+                        <div class="contenu">
+                            <b style="text-align: center"> S'il vous plaît remplissez le formulaire ci-dessous avec soins;
+                                Merci !</b>
+                            <form (ngSubmit)="onSubmitForm(f)">
+                                <br>
+                                <span style="background-color: black;color: white; text-align: center">&nbsp;&nbsp;&nbsp;Entrer les information correct svp ! </span>
+                                <br>
+                                <ion-list>
+                                    <ion-item>
+                                        <ion-label position="floating">Nom</ion-label>
+                                        <ion-input type="tetx" [name]="nom" [value]="Nom"></ion-input>
+                                    </ion-item>
+                                    <ion-item>
+                                        <ion-label position="floating">Prenom: </ion-label>
+                                        <ion-input type="tetx" [name]="prenom" [value]="Prenom"></ion-input>
+                                    </ion-item>
+                                    <ion-item>
+                                        <ion-label position="floating">Email: </ion-label>
+                                        <ion-input type="text" [name]="couriel" [value]=""></ion-input>
+                                    </ion-item>
+                                    <ion-item>
+                                        <ion-label position="floating">Téléphone: </ion-label>
+                                        <ion-input type="tel" [name]="phone" [value]="Telephone"></ion-input>
+                                    </ion-item>
+                                    <br>
+                                    <span style="text-align: center;font-size: 13px">&nbsp;&nbsp;&nbsp;Creation de votre mot de passe</span>
+                                    <br>
+                                    <ion-item>
+                                        <ion-label position="floating">Mot de passe: </ion-label>
+                                        <ion-input type="password" [name]="password" [value]=""></ion-input>
+                                    </ion-item>
+                                    <ion-item>
+                                        <ion-label position="floating">Confirmer le Mot de passe: </ion-label>
+                                        <ion-input type="password" [name]="password" [value]=""></ion-input>
+                                    </ion-item>
+                                </ion-list>
+                                <br>
+                                <ion-button slot="start" onclick="" style="margin-top: 10px;font-size: 20px">Je m'inscrit</ion-button>
+                                <div style="margin-top: 10px"></div>
+                            </form>
+                        </div>
+                </ion-card>
+            </ion-col>
+        </ion-row>
+    </ion-grid>
+</ion-content>
+<ion-footer style="background-color: whitesmoke" padding>
+    <div style="text-align: center">
+        <span style="color: grey">© 2019 BabyFood, tous droits reservé</span><br>
+        <b style="color: darkgray">By <a href="">Auguinard Kouame</a> & <a href="">Ecole NaN</a></b>
+    </div>
+</ion-footer>
